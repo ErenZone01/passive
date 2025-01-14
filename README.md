@@ -10,7 +10,7 @@
    Vérifie si un nom d'utilisateur existe sur **au moins 5 réseaux sociaux**, notamment :
    - Instagram
    - Twitter (X)
-   - Gitlab
+   - Tumblr
    - Reddit
    - Youtube
 

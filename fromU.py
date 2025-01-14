@@ -5,7 +5,7 @@ def search_profile(username):
     username = username.lstrip("@")  # Supprimer le @ au début
     youtube = f"http://www.youtube.com/{username}"
     queries = [username]
-    platforms = [Platforms.GITLAB, Platforms.INSTAGRAM, Platforms.TWITTER, Platforms.REDDIT]
+    platforms = [Platforms.TUMBLR , Platforms.INSTAGRAM, Platforms.TWITTER, Platforms.REDDIT]
     results = sync_execute_queries(queries, platforms)
     text = ""
     c = 0
