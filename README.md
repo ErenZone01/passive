@@ -10,9 +10,9 @@
    Vérifie si un nom d'utilisateur existe sur **au moins 5 réseaux sociaux**, notamment :
    - Instagram
    - Twitter (X)
-   - Facebook
-   - LinkedIn
-   - TikTok
+   - Gitlab
+   - Reddit
+   - Youtube
 
 2. **Recherche de nom complet (`fullname`)**  
    Permet de récupérer des informations telles que :
