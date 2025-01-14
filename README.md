@@ -42,9 +42,15 @@ bash ´python3 -m venv env´
 # Active l'environnement virtuel
 bash ´source env/bin/activate´
 
-# Installer les dependances
-bash ´pip install socialscan´
-bash ´pip install requests´
+# Installer les dependances ou utiliser le fichier requirement.txt
+   #Installation manuelle
+   bash ´pip install socialscan´
+   bash ´pip install requests´
+   #Installation avec Requirement.txt
+   bash ´pip install -r requirements.txt´
+   #mettre a jour les dependances
+   bash ´pip freeze > requirements.txt´
+
 
 # Execution -u (Username)
 bash ´python3 passive.py -u "@username"´
