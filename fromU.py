@@ -4,8 +4,9 @@ import requests
 def search_profile(username):
     username = username.lstrip("@")  # Supprimer le @ au début
     youtube = f"http://www.youtube.com/{username}"
+    linkedin = f"http://www.linkedin.com/in/{username}"
     queries = [username]
-    platforms = [Platforms.TUMBLR , Platforms.INSTAGRAM, Platforms.TWITTER, Platforms.REDDIT]
+    platforms = [Platforms.TUMBLR, Platforms.TWITTER, Platforms.REDDIT]
     results = sync_execute_queries(queries, platforms)
     text = ""
     c = 0
@@ -25,4 +26,18 @@ def search_profile(username):
     else:
         text += "Youtube: No\n"
         print(f"Youtube: No")
+        
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+    }
+    request1 = requests.get(linkedin, headers=headers)
+    if request1.status_code == 200 :
+        text += "Linkdin: Yes\n"
+        print(f"Linkdin: Yes")
+    else:
+        text += "Linkdin: No\n"
+        print(f"Linkdin: No")
     Displaye.Display(text)
+    
+    
+    

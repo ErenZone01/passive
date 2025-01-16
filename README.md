@@ -8,7 +8,7 @@
 
 1. **Recherche de nom d'utilisateur sur les réseaux sociaux**  
    Vérifie si un nom d'utilisateur existe sur **au moins 5 réseaux sociaux**, notamment :
-   - Instagram
+   - Linkedin
    - Twitter (X)
    - Tumblr
    - Reddit
